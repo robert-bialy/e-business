@@ -21,3 +21,7 @@ RUN curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E4
 RUN apt update -y
 
 RUN apt install sbt -y
+
+VOLUME /data
+
+EXPOSE 9000
